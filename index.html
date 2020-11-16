@@ -158,11 +158,16 @@
             </div>
         </div>
     </div>
-    <!-- Call to action-->
+    <!-- Bitcoin-->
     <section class="page-section bg-dark text-white">
         <div class="container text-center">
             <h2 class="mb-4">Paiement avec Bitcoin </h2>
-            <a class="btn btn-light btn-xl" href="new.php">Cliquer ici</a>
+           <form action="https://bitpay.com/checkout" method="post">
+                <input type="hidden" name="action" value="checkout" />
+                <input type="hidden" name="posData" value="" />
+                <input type="hidden" name="data" value="hg8pabo9lA5McsrMRScI6ImoxATUwW9N5A5ndSfa4j7uG7PRr/UJmUiMYvP3RWPD+H5SJbeyG6u1zraEH4JebHXa5n3xDx+nQdpPABVt2INcgTq37CJCSVr7npc3PQgkT/CFbMiMHqXUvMOyF/SlVg==" />
+                <input type="image" src="https://bitpay.com/cdn/en_US/bp-btn-pay-currencies.svg" name="submit" style="width: 210px" alt="BitPay, the easy way to pay with bitcoins.">
+            </form>
         </div>
     </section>
     <!-- Contact-->
